@@ -2,6 +2,7 @@
 Student project for the Advanced Training Module - ATM
 
 __Technical setup__
+
 Ensure wget is installed on your machine (e.g. for MacOS):
 
 ```brew install wget```
