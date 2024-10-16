@@ -33,11 +33,11 @@ First, make the download_awssi.sh script executable. Then, run the script.
 
 Make the bash scripts executable:
 
-```chmod +x download_awssi.sh``` # To download the AWSSI data
+```chmod +x download_awssi.sh``` <!--To download the AWSSI data-->
 
-```chmod +x awssi_data_processed.sh``` # To further process the AWSSI data, selecting winter months and region
+```chmod +x awssi_data_processed.sh``` <!--To further process the AWSSI data, selecting winter months and region-->
 
-```chmod +x blocking_index_data_processed.sh``` # Selecting the winter months and region
+```chmod +x blocking_index_data_processed.sh``` <!--Selecting the winter months and region-->
 
 Run the bash scripts
 
