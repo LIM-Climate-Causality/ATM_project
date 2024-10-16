@@ -15,13 +15,13 @@ Ensure wget is installed on your machine (e.g. for MacOS):
 
 ## Required Python Packages
 
-xarray
-numpy
-pandas
-matplotlib
-cartopy
-shapely
-netCDF4 (optional, often installed with xarray)
+- xarray
+- numpy
+- pandas
+- matplotlib
+- cartopy
+- shapely
+- netCDF4 (optional, often installed with xarray)
 
 ## Data Download
 
@@ -52,18 +52,34 @@ Run the bash scripts
 
 ## Scripts
 
-## Winter Blocking and AWSSI Comparison
+### Winter Blocking and AWSSI Comparison
 
-Script Name: ```winter_blocking_awssi_comparison.ipynb```
+__Script Name:__ ```script.ipynb``` First block
 
-Description:
+__Description:__
 
 This script generates a side-by-side comparison plot of winter blocking events and winter AWSSI events. It creates two subplots in a polar stereographic projection, highlighting specific regions of interest.
 
-Features:
+__Features:__
 
 - Loads and processes NetCDF data files for blocking events and AWSSI.
 - Selects winter months (November to March) and computes the mean over time.
 - Plots the data using matplotlib and cartopy.
 - Adds arcs to highlight regions like the Atlantic, Pacific, Greenland, etc.
-- Saves the figure as winter_blocking_awssi_comparison.png.
+- Saves the figure as ```winter_blocking_awssi_comparison.png```
+
+### Regional Cross-Year Winter Time Series
+
+__Script Name:__ ```script.ipynb``` Second block
+
+__Description:__
+
+This script generates time series plots of blocking events, AWSSI total, and AWSSI temperature for specified regions over cross-year winters (e.g., Winter 1999/2000).
+
+__Features:__
+
+- Loads and processes NetCDF data files for blocking events and AWSSI.
+- Assigns winter seasons that span across years.
+- Computes regional averages for each winter season.
+- Plots time series subplots for each region and variable.
+- Saves the figure as ```regional_cross_year_winter_time_series.png```
