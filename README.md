@@ -3,7 +3,8 @@ Student project for the Advanced Training Module - ATM
 
 This repository contains scripts and instructions for downloading data and generating plots related to winter blocking events and the AWSSI (Accumulated Winter Season Severity Index). The scripts analyze and visualize atmospheric blocking events and AWSSI data over specified regions and time periods.
 
-__Prerequisites__
+## Prerequisites
+
 Before running the scripts, ensure you have the following installed:
 
 Python 3.8 or higher
@@ -12,7 +13,8 @@ Ensure wget is installed on your machine (e.g. for MacOS):
 
 ```brew install wget```
 
-__Required Python Packages__
+## Required Python Packages
+
 xarray
 numpy
 pandas
@@ -21,7 +23,8 @@ cartopy
 shapely
 netCDF4 (optional, often installed with xarray)
 
-__Data Download__
+## Data Download
+
 The scripts require specific NetCDF data files for blocking events and AWSSI data. Use the provided bash scripts to download the necessary data.
 
 Bash Scripts for Data Download
@@ -46,3 +49,21 @@ Run the bash scripts
 ```./awssi_data_processed.sh```
 
 ```./blocking_index_data_processed.sh```
+
+## Scripts
+
+## Winter Blocking and AWSSI Comparison
+
+Script Name: ```winter_blocking_awssi_comparison.ipynb```
+
+Description:
+
+This script generates a side-by-side comparison plot of winter blocking events and winter AWSSI events. It creates two subplots in a polar stereographic projection, highlighting specific regions of interest.
+
+Features:
+
+- Loads and processes NetCDF data files for blocking events and AWSSI.
+- Selects winter months (November to March) and computes the mean over time.
+- Plots the data using matplotlib and cartopy.
+- Adds arcs to highlight regions like the Atlantic, Pacific, Greenland, etc.
+- Saves the figure as winter_blocking_awssi_comparison.png.
