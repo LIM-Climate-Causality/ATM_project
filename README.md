@@ -7,9 +7,9 @@ This repository contains scripts and instructions for downloading data and gener
 
 Before running the scripts, ensure you have the following installed:
 
-Python 3.8 or higher
-Conda package manager (optional but recommended)
-Ensure wget is installed on your machine (e.g. for MacOS):
+- Python 3.8 or higher
+- Conda package manager (optional but recommended)
+- Ensure wget is installed on your machine (e.g. for MacOS):
 
 ```brew install wget```
 
